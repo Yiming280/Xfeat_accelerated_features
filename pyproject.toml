@@ -1,0 +1,17 @@
+[project]
+name = "xfeat-accelerated-features"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.8.*"
+dependencies = [
+    "opencv-contrib-python-headless==4.10.0.84",
+    "poselib",
+    "kornia==0.7.2",
+    "tqdm",
+    "gdown",
+    "matplotlib>=3.7.5",
+]
+
+[tool.uv]
+required-environments = ["sys_platform == 'win32' and platform_machine == 'AMD64'"]
